@@ -60,7 +60,7 @@ function main() {
   return {
     DOM: Rx.Observable.interval(1000)
       .map(i => CycleDOM.h(
-        'h1', '' + i + ' seconds elapsed'
+        'h1', `${i} seconds elapsed`
       ))
   };
 }
